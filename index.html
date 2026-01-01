@@ -1,70 +1,83 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meine Vibe Website</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel with Mavi – UGC Creator</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
 </head>
-<body class="font-sans bg-white text-gray-800">
+
+<body class="text-gray-800">
 
   <!-- HERO -->
-  <header class="h-screen flex flex-col justify-center items-center bg-gradient-to-b from-blue-100 to-white text-center">
-    <h1 class="text-5xl font-bold mb-4" data-aos="fade-down">Hi, ich bin [DEIN NAME]</h1>
-    <p class="text-xl mb-6" data-aos="fade-up">UGC Creator & Travel Enthusiast</p>
-    <a href="#contact" class="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-full font-semibold" data-aos="zoom-in">Jetzt Kontakt</a>
+  <header class="relative h-screen bg-cover bg-center"
+    style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');">
+
+    <div class="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-center px-6">
+      <h1 class="text-white text-5xl md:text-6xl font-bold leading-tight">
+        Travel with Mavi
+      </h1>
+      <p class="text-white text-xl mt-4 max-w-xl">
+        Authentic travel UGC for brands, hotels & destinations
+      </p>
+      <a href="#contact"
+        class="mt-8 bg-white text-black px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-200 transition">
+        Work with me
+      </a>
+    </div>
   </header>
 
-  <!-- ABOUT ME -->
-  <section id="about" class="py-20 px-6 max-w-4xl mx-auto text-center">
-    <h2 class="text-3xl font-bold mb-6" data-aos="fade-right">Über mich</h2>
-    <p class="text-lg" data-aos="fade-left">
-      Ich liebe es, authentische Inhalte zu erstellen, die Marken und Menschen verbinden. Mein Fokus liegt auf TikTok, Instagram Reels und kreativen Produktfotos.
+  <!-- ABOUT -->
+  <section class="py-20 px-6 max-w-5xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-6">What I do</h2>
+    <p class="text-lg text-gray-600">
+      I create high-quality, authentic travel content that helps brands connect
+      with their audience through storytelling and emotion.
     </p>
   </section>
 
   <!-- SERVICES -->
-  <section id="services" class="py-20 bg-gray-50 px-6">
-    <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Meine Services</h2>
-    <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto text-center">
-      <div class="p-6 bg-white rounded-lg shadow-lg" data-aos="flip-left">
-        <h3 class="text-xl font-semibold mb-2">TikTok UGC</h3>
-        <p>Kreative Videos, die Produkte organisch zeigen</p>
+  <section class="bg-gray-100 py-20 px-6">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 text-center">
+
+      <div class="bg-white p-8 rounded-xl shadow-lg">
+        <h3 class="text-xl font-semibold mb-3">TikTok UGC</h3>
+        <p class="text-gray-600">Engaging short-form videos optimised for TikTok</p>
       </div>
-      <div class="p-6 bg-white rounded-lg shadow-lg" data-aos="flip-left" data-aos-delay="100">
-        <h3 class="text-xl font-semibold mb-2">Instagram Reels</h3>
-        <p>Content, der Engagement und Reichweite steigert</p>
+
+      <div class="bg-white p-8 rounded-xl shadow-lg">
+        <h3 class="text-xl font-semibold mb-3">Instagram Reels</h3>
+        <p class="text-gray-600">Scroll-stopping Reels for Instagram growth</p>
       </div>
-      <div class="p-6 bg-white rounded-lg shadow-lg" data-aos="flip-left" data-aos-delay="200">
-        <h3 class="text-xl font-semibold mb-2">Produktfotografie</h3>
-        <p>Professionelle Bilder für Websites, Shops und Social Media</p>
+
+      <div class="bg-white p-8 rounded-xl shadow-lg">
+        <h3 class="text-xl font-semibold mb-3">Photography</h3>
+        <p class="text-gray-600">High-quality photos for ads & websites</p>
       </div>
+
     </div>
   </section>
 
-  <!-- BRANDS -->
-  <section id="brands" class="py-20 px-6 max-w-6xl mx-auto text-center">
-    <h2 class="text-3xl font-bold mb-12" data-aos="fade-up">Brands I've Worked With</h2>
-    <div class="flex flex-wrap justify-center items-center gap-8">
-      <img src="logo1.png" alt="Brand 1" class="h-12" data-aos="zoom-in">
-      <img src="logo2.png" alt="Brand 2" class="h-12" data-aos="zoom-in" data-aos-delay="100">
-      <img src="logo3.png" alt="Brand 3" class="h-12" data-aos="zoom-in" data-aos-delay="200">
-    </div>
+  <!-- CTA -->
+  <section id="contact" class="py-24 bg-black text-white text-center px-6">
+    <h2 class="text-4xl font-bold mb-6">Let’s work together</h2>
+    <p class="mb-8 text-lg">Ready to elevate your brand with authentic UGC?</p>
+    <a href="mailto:hello@yourmail.com"
+      class="bg-white text-black px-10 py-4 rounded-full font-semibold hover:bg-gray-200 transition">
+      Contact me
+    </a>
   </section>
 
-  <!-- CONTACT / CTA -->
-  <section id="contact" class="py-20 bg-blue-500 text-white text-center">
-    <h2 class="text-3xl font-bold mb-6" data-aos="fade-up">Let’s Connect</h2>
-    <p class="mb-6" data-aos="fade-up" data-aos-delay="100">
-      Schreib mir eine E-Mail oder DM auf Instagram!
-    </p>
-    <a href="mailto:deineemail@example.com" class="bg-white text-blue-500 px-8 py-3 rounded-full font-semibold hover:bg-gray-100" data-aos="zoom-in" data-aos-delay="200">Email Me</a>
-  </section>
-
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({ duration: 800, once: true });
-  </script>
 </body>
 </html>
