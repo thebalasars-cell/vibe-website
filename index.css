@@ -538,4 +538,41 @@ footer {
   .contact-title {
     font-size: 3.5rem;
   }
+
+  /* Portfolio adjustments for tablets and mobiles */
+  .portfolio-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .phone-frame {
+    max-width: 280px;
+  }
+}
+
+/* Additional mobile adjustments for small screens */
+@media (max-width: 480px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr; /* Single column on very small screens */
+    gap: 1rem;
+  }
+
+  .phone-frame {
+    max-width: 100%;
+    aspect-ratio: 9/18; /* Slightly less tall for better fit */
+  }
+
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .portfolio-tabs {
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .portfolio-tab {
+    font-size: 1.2rem;
+  }
 }
