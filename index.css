@@ -416,7 +416,6 @@ section {
   max-width: 100%;
   max-height: 60px;
   object-fit: contain;
-  margin-bottom: 1rem;
   filter: brightness(0) saturate(100%) invert(20%) sepia(11%) font-family(var(--accent-color));
   /* Force accent color if possible, or just use original if colored */
 }
