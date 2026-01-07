@@ -1,6 +1,6 @@
 :root {
   --bg-color: #e3ded6;
-  --text-color: #ffffff;
+  --text-color: white;
   --accent-color: #E69DBE;
   --secondary-bg: #d9d4cc;
   --font-serif: 'Playfair Display', serif;
@@ -131,7 +131,7 @@ nav ul li a:hover {
   letter-spacing: 0.2rem;
   text-transform: uppercase;
   font-weight: 400;
-  color: var(--accent-color);
+  color: white;
 }
 
 .hero-btns {
