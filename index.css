@@ -559,8 +559,8 @@ footer {
 
   .phone-frame {
     max-width: 100%;
-    aspect-ratio: 9/18; /* Slightly less tall for better fit */
-    max-height: 70vh; /* Prevent overflowing on small screens */
+    height: 70vh; /* Fixed height to prevent overflowing */
+    aspect-ratio: unset; /* Remove aspect ratio for fixed height */
   }
 
   .section-title {
