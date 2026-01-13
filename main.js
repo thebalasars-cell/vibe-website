@@ -91,6 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Desktop Hover Play
         card.addEventListener('mouseenter', () => {
             if (window.innerWidth > 768) {
+                video.muted = false;
                 video.play();
                 card.classList.add('playing');
             }
@@ -99,6 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
         card.addEventListener('mouseleave', () => {
             if (window.innerWidth > 768) {
                 video.pause();
+                video.muted = true;
                 card.classList.remove('playing');
             }
         });
