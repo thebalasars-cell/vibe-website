@@ -108,10 +108,12 @@ document.addEventListener('DOMContentLoaded', () => {
         // Toggle on click/tap (Manual override)
         card.addEventListener('click', () => {
             if (video.paused) {
+                video.muted = false;
                 video.play();
                 card.classList.add('playing');
             } else {
                 video.pause();
+                video.muted = true;
                 card.classList.remove('playing');
             }
         });
