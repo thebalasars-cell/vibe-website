@@ -71,10 +71,12 @@ document.addEventListener('DOMContentLoaded', () => {
             // On mobile, auto-play when scrolling into view
             if (window.innerWidth <= 768) {
                 if (entry.isIntersecting) {
+                    video.muted = false;
                     video.play().catch(() => { });
                     entry.target.classList.add('playing');
                 } else {
                     video.pause();
+                    video.muted = true;
                     entry.target.classList.remove('playing');
                 }
             }
